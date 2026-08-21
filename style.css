@@ -36,14 +36,59 @@ img{
     justify-content: center;
     margin-top: 50px;
     gap: 50px;
-   
-   
+
 }
 
 .choice:hover{
-/* transform: scale(1.05); */
 border-color: black;
 transition: border-color 0.2s;
+background-color:rgb(82, 82, 91) ;
 cursor: pointer;
 }
 
+.choice img {
+    transition: transform 0.1s ease;
+}
+
+.choice:hover {
+    border-color: black;
+}
+
+.choice:hover img {
+    transform: scale(1.1);
+}
+
+.scoreBoard{
+/* margin-top: 5rem; */
+padding: 3rem;
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 50px;
+
+}
+
+.score{
+    font-size: 2rem;
+}
+
+#userScore, #compScore{
+    font-size: 5rem;
+}
+
+/* .msg-container{
+
+background-color:rgb(82, 82, 91) 
+
+
+} */
+
+#msg{
+    padding: 1.5rem;
+    border-radius: 2rem;
+    display: inline;
+    color: white;
+    font-size: 2rem;
+    background-color:rgb(30, 30, 33)
+    
+}
